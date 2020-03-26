@@ -322,7 +322,7 @@ local function get_attack_basics(unit, equipment, weapon)
 	end
 	return attack, weapon_class
 end
-wesnoth.register_wml_action("calculate_weapon_display", function(args)
+function wesnoth.wml_actions.calculate_weapon_display(args)
 	local unit_var = args.unit_variable or H.wml_error("[calculate_weapon_display] requires a unit_variable= key")
 	local weapon_var = args.weapon_variable or H.wml_error("[calculate_weapon_display] requires a unit_variable= key")
 	local unit = parse_container(wesnoth.get_variable(unit_var))
@@ -331,7 +331,7 @@ wesnoth.register_wml_action("calculate_weapon_display", function(args)
 	local attack = get_attack_basics(unit, equipment, weapon)
 	wesnoth.set_variable("display_damage", attack.damage)
 	wesnoth.set_variable("display_number", attack.number)
-end)
+end
 
 local function find_npc_value(unit, params)
 	params = params or {}
@@ -355,8 +355,8 @@ local function find_npc_value(unit, params)
 		berserk = params.berserk_mod or 2.2,
 		slashdash = params.slashdash_mod or 1.5,
 		accuracy = params.accuracy_mod or 1.2,
-		evasion = params.evasion_mod or 1.4,	
-		goliath = params.goliath_mod or 1.6,	
+		evasion = params.evasion_mod or 1.4,
+		goliath = params.goliath_mod or 1.6,
 		ensnare = params.ensnare_mod or 1.2,
 		pointpike = params.pointpike_mod or 1.2,
 		storm = params.storm_mod or 1.2,
