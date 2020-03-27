@@ -1073,12 +1073,8 @@ The unit will heal itself 8 HP per turn. If it is poisoned, it will remove the p
 			table.insert(abilities, { "regenerate", {
 				id = "regenerates",
 				value = 6,
-				name = "water",
-				description = "Made of Water:\
-This unit is made of water. As a result, if it is standing in water, it will receive 6 hp. If it is poisoned, it will remove it instead of healing.",
-				name_inactive = "water",
-				description_inactive = "Made of Water:\
-This unit is made of water. As a result, if it is standing in water, it will receive 6 hp. If it is poisoned, it will remove it instead of healing.",
+				name = "Made of Water",
+				description = "This unit is made of water. As a result, if it is standing in water, it will receive 6 hp. If it is poisoned, it will remove it instead of healing.",
 				affect_self = "yes",
 				poison = "cured",
 				{ "filter_self", {
@@ -1091,12 +1087,8 @@ This unit is made of water. As a result, if it is standing in water, it will rec
 			table.insert(abilities, { "regenerate", {
 				id = "regenerates",
 				value = 6,
-				name = "rock",
-				description = "Made of Rock:\
-This unit is made of rock. If it stands in loose rock, it will recive 6 hp. If it is poisoned, it will remove it instead of healing.",
-				name_inactive = "rock",
-				description_inactive = "Made of Rock:\
-This unit is made of rock. If it stands in loose rock, it will recive 6 hp. If it is poisoned, it will remove it instead of healing.",
+				name = "Made of Rock",
+				description = "This unit is made of rock. If it stands in loose rock, it will recive 6 hp. If it is poisoned, it will remove it instead of healing.",
 				affect_self = "yes",
 				poison = "cured",
 				{ "filter_self", {
@@ -1109,12 +1101,8 @@ This unit is made of rock. If it stands in loose rock, it will recive 6 hp. If i
 			table.insert(abilities, { "regenerate", {
 				id = "regenerates",
 				value = 6,
-				name = "fire",
-				description = "Made of Fire:\
-This unit is made of fire. If it stands in lava, it will recive 6 hp. If it is poisoned, it will remove it instead of healing.",
-				name_inactive = "fire",
-				description_inactive = "Made of Fire:\
-This unit is made of fire. If it stands in lava, it will recive 6 hp. If it is poisoned, it will remove it instead of healing.",
+				name = "Made of Fire",
+				description = "This unit is made of fire. If it stands in lava, it will recive 6 hp. If it is poisoned, it will remove it instead of healing.",
 				affect_self = "yes",
 				poison = "cured",
 				{ "filter_self", {
